@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 180px;
+  height: 280px;
+  justify-content: center;
+  align-self: center;
+  background-color: gray;
+  &:hover{
+    box-shadow:0 0 2rem chartreuse;
+    width: 185px;
+    height: 285px;
+  }
+}
+
+.flag{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  align-self: center
+}
+
+.countryName{
+  text-align: center;
+}
+
+.capital{
+  text-align: center;
+}
+
+.population{
+  text-align: center;
+}
