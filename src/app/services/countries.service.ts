@@ -13,4 +13,9 @@ export class CountriesService {
   getCountriesByName(){
     return this._http.get('https://restcountries.eu/rest/v2/all?fields=name;capital;population;flag');
   }
+
+  getAllCountriesDetails(countryName){
+    return this._http.get(`https://restcountries.eu/rest/v2/name/${countryName}`);
+    
+  }
 }

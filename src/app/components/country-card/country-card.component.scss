@@ -1,16 +1,17 @@
 .container{
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  width: 180px;
-  height: 280px;
+  margin-top: 40px;
+  padding: 40px;
+  width: 200px;
+  height: 300px;
   justify-content: center;
   align-self: center;
   background-color: gray;
   &:hover{
     box-shadow:0 0 2rem chartreuse;
-    width: 185px;
-    height: 285px;
+    width: 205px;
+    height: 305px;
   }
 }
 

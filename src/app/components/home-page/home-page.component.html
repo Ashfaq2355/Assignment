@@ -2,6 +2,6 @@
 </div>
 <div class="container">
   <app-country-card *ngFor="let country of countries" [flagx]="country.flag" [countryNamex]="country.countryName"
-    [populationx]="country.population" [capitalx]="country.capital">
+    [populationx]="country.population" [capitalx]="country.capital" (click)="goToCountryDetailsPage(country)"> 
   </app-country-card>
 </div>

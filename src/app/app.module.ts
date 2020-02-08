@@ -21,11 +21,11 @@ export function createTranslateLoader(http: HttpClient){
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
     CountryCardComponent,
     HeaderComponent,
     CountryDetailsPageComponent,
-    CountryDetailsCardComponent,
-   HomePageComponent
+    CountryDetailsCardComponent   
   ],
 
   imports: [

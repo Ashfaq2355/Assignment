@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-country-card',
@@ -11,9 +11,20 @@ export class CountryCardComponent implements OnInit {
   @Input() populationx: number;
   @Input() capitalx: string;
 
-  constructor() { }
+  @Output() selectedCountry: EventEmitter<string>;
+
+
+  constructor() { 
+    this.selectedCountry=new EventEmitter<string>();
+  }
 
   ngOnInit() {
   }
+
+  countrySelected(countryNamex: string): void{
+    console.log(countryNamex);
+    this.selectedCountry.emit(countryNamex);
+  }
+
 
 }
