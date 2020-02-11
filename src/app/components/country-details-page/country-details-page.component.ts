@@ -32,10 +32,17 @@ export class CountryDetailsPageComponent implements OnInit {
         this.countryDetails.push({
           flag: element.flag,
           countryName: element.name,
-          population: element.population,
           capital: element.capital,
-          region: element.region
-        });
+          region: element.region,
+          population: element.population,
+          latitude:element.latlng[0],
+          longitude: element.latlng[1],
+          currenciesCode: element.currencies[0].code,
+          currenciesName: element.currencies[0].name,
+          currenciesSymbol: element.currencies[0].symbol,
+          borders: element.borders[0],
+          callingCodes: element.callingCodes,
+          });
       });
     });
   }

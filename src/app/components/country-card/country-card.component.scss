@@ -3,6 +3,7 @@
   flex-direction: column;
   border-radius: 10%;
   margin-top: 40px;
+  margin-bottom: 20px;
   padding: 40px;
   width: 200px;
   height: 300px;
@@ -27,6 +28,7 @@
 .countryName{
   text-align: center;
   font-family: 'Roboto';
+  font-size: 24px;
   color: #66fcf1;
 }
 
@@ -34,10 +36,12 @@
   text-align: center;
   color: #66fcf1;
   font-family: 'Roboto';
+  font-size: 18px;
 }
 
 .population{
   text-align: center;
   color: #66fcf1;
   font-family: 'Roboto';
+  font-size: 18px;
 }

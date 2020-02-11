@@ -1,0 +1,36 @@
+body{ 
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    min-height: 100vh;
+    border-style: groove;
+    border-color: green;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+    align-content: stretch;
+
+    .flagContainer{
+    display: flex;
+    border-radius: 20%;
+    justify-content: center;
+    padding: 20px;
+
+        .flag{
+            height: 520px;
+            width: 520px;
+        }
+    }
+    .detailsContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding: 50px;
+    
+    }
+}
+

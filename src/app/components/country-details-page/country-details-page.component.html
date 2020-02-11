@@ -1,5 +1,16 @@
 <div class="container">
-<app-country-details-card *ngFor="let countryDetail of countryDetails" [flagx]="countryDetail.flag" [countryNamex]="countryDetail.countryName"
-    [populationx]="countryDetail.population" [capitalx]="countryDetail.capital"> 
+<app-country-details-card *ngFor="let countryDetail of countryDetails" 
+    [flagx]="countryDetail.flag" 
+    [countryNamex]="countryDetail.countryName"
+    [capitalx]="countryDetail.capital"
+    [regionx]="countryDetail.region"
+    [populationx]="countryDetail.population"
+    [latitudex]="countryDetail.latitude"
+    [longitudex]="countryDetail.longitude"
+    [currenciesCodex]="countryDetail.currenciesCode"
+    [currenciesNamex]="countryDetail.currenciesName"
+    [currenciesSymbolx]="countryDetail.currenciesSymbol"
+    [bordersx]="countryDetail.border"
+    [callingCodesx]="countryDetail.callingCodes"> 
 </app-country-details-card>
 </div>
