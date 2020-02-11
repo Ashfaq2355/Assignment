@@ -40,8 +40,8 @@ export class CountryDetailsPageComponent implements OnInit {
           currenciesCode: element.currencies[0].code,
           currenciesName: element.currencies[0].name,
           currenciesSymbol: element.currencies[0].symbol,
-          borders: element.borders[0],
-          callingCodes: element.callingCodes,
+          borders: element.borders,
+          callingCodes: element.callingCodes
           });
       });
     });

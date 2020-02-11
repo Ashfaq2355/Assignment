@@ -16,7 +16,7 @@ export class CountryDetailsCardComponent implements OnInit {
   @Input() currenciesCodex: string;
   @Input() currenciesNamex: string;
   @Input() currenciesSymbolx: string;
-  @Input() bordersx: string[];
+  @Input() bordersx: string;
   @Input() callingCodesx: [];
 
   constructor() { }

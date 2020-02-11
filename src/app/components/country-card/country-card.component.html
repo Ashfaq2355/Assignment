@@ -1,6 +1,6 @@
 <div class="container" (click)="countrySelected(countryNamex)">
 <div class="countryName">{{countryNamex}}</div>
 <img [src]="flagx" class="flag">
-<div class="population">Population: {{populationx}}</div>
+<div class="population">Population: {{populationx.toLocaleString()}}</div>
 <div class="capital">Capital: {{capitalx}}</div>
 </div>

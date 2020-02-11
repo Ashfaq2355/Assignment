@@ -8,7 +8,7 @@ export interface CountryDetails {
     currenciesCode: string;
     currenciesName: string;
     currenciesSymbol: string;
-    borders: string [];
+    borders: string;
     callingCodes: string [];
     flag: string;
   }
