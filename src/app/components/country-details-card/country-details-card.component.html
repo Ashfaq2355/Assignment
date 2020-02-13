@@ -1,104 +1,116 @@
 <div class="main">
-<div class="flagContainer">
-<img [src]="flagx" class="flag">
-</div>
-<table>
-  <thead>
-    <tr>
-      <th colspan="2">Country Details</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        Country Name:
-      </td>
-      <td>
-        {{countryNamex}}
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Capital:
-      </td>
-      <td>
-        {{capitalx}}
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Region:
-      </td>
-      <td>
-        {{regionx}}
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Population:
-      </td>
-      <td>
-        {{populationx.toLocaleString()}}
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Latitude:
-      </td>
-      <td>
-        {{latitudex}}°
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Longitude:
-      </td>
-      <td>
-        {{longitudex}}°
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Currency Code:
-      </td>
-      <td>
-        {{currenciesCodex}}
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Currency Name:
-      </td>
-      <td>
-        {{currenciesNamex}}
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Currency Symbol:
-      </td>
-      <td>
-        {{currenciesSymbolx}}
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Borders:
-      </td>
-      <td>
-      <div *ngIf="bordersx.length != 0; else elseBlock">{{bordersx}}</div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Calling Codes:
-      </td>
-      <td>
-        {{callingCodesx}}
-      </td>
-    </tr>
-  </tbody>
-  </table>
+  <section class="split">  
+    <div class="screen">
+      <div class="card">
+        <div class="imageBox"> 
+          <img [src]="flagx">
+        </div>
+      </div>
+    </div>
+      <div class="screen2">
+      <div class="card2">
+      <div class="imageBox2"> 
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Country Details</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+               Country Name:
+              </td>
+              <td>
+              {{countryNamex}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Capital:
+              </td>
+              <td>
+              {{capitalx}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Region:
+              </td>
+              <td>
+              {{regionx}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Population:
+            </td>
+            <td>
+              {{populationx.toLocaleString()}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Latitude:
+            </td>
+            <td>
+              {{latitudex}}°
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Longitude:
+            </td>
+            <td>
+              {{longitudex}}°
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Currency Code:
+            </td>
+            <td>
+            {{currenciesCodex}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Currency Name:
+            </td>
+            <td>
+            {{currenciesNamex}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Currency Symbol:
+            </td>
+            <td>
+            {{currenciesSymbolx}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Borders:
+            </td>
+            <td>
+            <div *ngIf="bordersx.length != 0; else elseBlock">{{bordersx}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Calling Codes:
+            </td>
+            <td>
+            {{callingCodesx}}
+            </td>
+            </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
+      </div>
+  </section>
 </div>
 
 <ng-template #elseBlock>No borders</ng-template>
