@@ -1,4 +1,4 @@
-body{ 
+body{
     display: flex;
     flex-direction: row;
     margin: 2rem;
@@ -16,7 +16,7 @@ body{
     .flagContainer{
     display: flex;
     border-radius: 20%;
-    justify-content: center;
+    justify-content: left;
     padding: 20px;
 
         .flag{
@@ -24,13 +24,23 @@ body{
             width: 520px;
         }
     }
-    .detailsContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: white;
-        padding: 50px;
-    
-    }
 }
 
+table{
+  align-self: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th{
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+td{
+  color: whitesmoke;
+  padding: 6px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}

@@ -2,17 +2,106 @@
 <div class="flagContainer">
 <img [src]="flagx" class="flag">
 </div>
-<div class="detailsContainer">
-<div class="countryName">{{countryNamex}}</div>
-<div class="capital">{{capitalx}}</div>
-<div class="region">{{regionx}}</div>
-<div class="population">{{populationx.toLocaleString()}}</div>
-<div class="latitude">{{latitudex}}</div>
-<div class="longitude">{{longitudex}}</div>
-<div class="currencies">{{currenciesCodex}}</div>
-<div class="currencies">{{currenciesNamex}}</div>
-<div class="currencies">{{currenciesSymbolx}}</div>
-<div class="borders">{{bordersx}}</div>
-<div class="callingCodes">{{callingCodesx}}</div>
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Country Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Country Name:
+      </td>
+      <td>
+        {{countryNamex}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Capital:
+      </td>
+      <td>
+        {{capitalx}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Region:
+      </td>
+      <td>
+        {{regionx}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Population:
+      </td>
+      <td>
+        {{populationx.toLocaleString()}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Latitude:
+      </td>
+      <td>
+        {{latitudex}}°
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Longitude:
+      </td>
+      <td>
+        {{longitudex}}°
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Currency Code:
+      </td>
+      <td>
+        {{currenciesCodex}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Currency Name:
+      </td>
+      <td>
+        {{currenciesNamex}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Currency Symbol:
+      </td>
+      <td>
+        {{currenciesSymbolx}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Borders:
+      </td>
+      <td>
+      <div *ngIf="bordersx.length != 0; else elseBlock">{{bordersx}}</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Calling Codes:
+      </td>
+      <td>
+        {{callingCodesx}}
+      </td>
+    </tr>
+  </tbody>
+  </table>
 </div>
-</div>
+
+<ng-template #elseBlock>No borders</ng-template>
+
+
+
