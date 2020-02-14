@@ -1,16 +1,117 @@
 <div class="container">
-<app-country-details-card *ngFor="let countryDetail of countryDetails" 
-    [flagx]="countryDetail.flag" 
-    [countryNamex]="countryDetail.countryName"
-    [capitalx]="countryDetail.capital"
-    [regionx]="countryDetail.region"
-    [populationx]="countryDetail.population"
-    [latitudex]="countryDetail.latitude"
-    [longitudex]="countryDetail.longitude"
-    [currenciesCodex]="countryDetail.currenciesCode"
-    [currenciesNamex]="countryDetail.currenciesName"
-    [currenciesSymbolx]="countryDetail.currenciesSymbol"
-    [bordersx]="countryDetail.borders"
-    [callingCodesx]="countryDetail.callingCodes"> 
-</app-country-details-card>
+<div class="main">
+  <section class="split">
+    <div class="screen">
+      <div class="card">
+        <div class="imageBox">
+          <img [src]="countryDetails.flag">
+        </div>
+      </div>
+    </div>
+      <div class="screen2">
+      <div class="card2">
+      <div class="imageBox2">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Country Details</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+               Country Name:
+              </td>
+              <td>
+              {{countryDetails.countryName}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Capital:
+              </td>
+              <td>
+              {{countryDetails.capital}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Region:
+              </td>
+              <td>
+              {{countryDetails.region}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Population:
+            </td>
+            <td>
+              {{countryDetails.population.toLocaleString()}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Latitude:
+            </td>
+            <td>
+              {{countryDetails.latitude}}°
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Longitude:
+            </td>
+            <td>
+              {{countryDetails.longitude}}°
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Currency Code:
+            </td>
+            <td>
+            {{countryDetails.currenciesCode}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Currency Name:
+            </td>
+            <td>
+            {{countryDetails.currenciesName}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Currency Symbol:
+            </td>
+            <td>
+            {{countryDetails.currenciesSymbol}}
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Borders:
+            </td>
+            <td>
+            <div *ngIf="countryDetails.borders.length != 0; else elseBlock">{{countryDetails.borders}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Calling Codes:
+            </td>
+            <td>
+            {{countryDetails.callingCodes}}
+            </td>
+            </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
+      </div>
+  </section>
+<ng-template #elseBlock>No borders</ng-template>
+</div>
 </div>

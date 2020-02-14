@@ -10,17 +10,30 @@ import { CountryDetails } from 'src/app/dto/countryDetails';
 })
 export class CountryDetailsPageComponent implements OnInit {
 
-  countryDetails: CountryDetails[];
+  countryDetails: CountryDetails;
 
-  
+  constructor(private _activatedRoute: ActivatedRoute, private _countryService: CountriesService) {
 
-  constructor(private _activatedRoute: ActivatedRoute, private _countryService: CountriesService) { 
-    this.countryDetails = [];
     this.getAllCountriesDetails();
+    this.countryDetails = {
+      flag:'',
+      countryName: '',
+      capital:'',
+      region:'',
+      population:0,
+      latitude:'',
+      longitude:'',
+      currenciesCode:'',
+      currenciesName:'',
+      currenciesSymbol:'',
+      borders:'',
+      callingCodes:[]
+    }
+
   }
 
   ngOnInit(): void {
- 
+
    }
 
   getAllCountriesDetails(): void{
@@ -29,7 +42,7 @@ export class CountryDetailsPageComponent implements OnInit {
     this._countryService.getAllCountriesDetails(countryName).subscribe(
       (data: any)=>{
       data.forEach(element =>{
-        this.countryDetails.push({
+        this.countryDetails=({
           flag: element.flag,
           countryName: element.name,
           capital: element.capital,

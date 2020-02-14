@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CountryCardComponent } from './components/country-card/country-card.component';
 import { CountryDetailsPageComponent } from './components/country-details-page/country-details-page.component';
-import { CountryDetailsCardComponent } from './components/country-details-card/country-details-card.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomePageComponent } from './components/home-page/home-page.component'
@@ -25,7 +24,6 @@ export function createTranslateLoader(http: HttpClient){
     CountryCardComponent,
     HeaderComponent,
     CountryDetailsPageComponent,
-    CountryDetailsCardComponent   
   ],
 
   imports: [

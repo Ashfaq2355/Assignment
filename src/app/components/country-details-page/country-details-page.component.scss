@@ -3,4 +3,69 @@
   padding: 0;
 }
 
-  
+section{
+  position: relative;
+  height: 100vh;
+  display: flex;
+
+  .screen{
+    position: relative;
+    flex-grow: 5;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+
+    .card{
+      max-width: 600px;
+      text-align: center;
+      justify-content: center;
+      .imageBox{
+        overflow: hidden;
+
+        img{
+          width: 600px;
+          height: 400px;
+          text-align: center;
+        }
+
+      }
+    }
+   }
+
+  .screen2{
+    position: relative;
+    flex-grow: 1;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: green;
+
+    .card2{
+      text-align: left;
+      justify-content: center;
+
+      table{
+        align-self: center;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      th{
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+section {
+  .screen2:hover{
+   flex-grow: 5;
+  }
+}
+
