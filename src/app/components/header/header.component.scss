@@ -1,5 +1,5 @@
 .header{
-  margin: 0px;
+  margin: 10px 20px 5px 20px;
   padding: 0px;
   display: flex;
   flex-direction: row;
@@ -7,9 +7,13 @@
   align-items: center;
   justify-content: center;
   height: 60px;
-  background-color: #0b0c10 ;
+  background-color: #0099e6 ;
+  //background: linear-gradient(to bottom, #0099e6, #99ddff);
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  color: #66fcf1;
-  width: 100%;
+  color: #f9f9f9;
+  //width: 100%;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.411);
 }

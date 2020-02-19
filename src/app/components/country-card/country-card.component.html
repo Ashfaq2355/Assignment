@@ -1,6 +1,9 @@
 <div class="container" (click)="countrySelected(countryNamex)">
-<div class="countryName">{{countryNamex}}</div>
-<img [src]="flagx" class="flag">
-<div class="population">Population: {{populationx.toLocaleString()}}</div>
-<div class="capital">Capital: {{capitalx}}</div>
+  <!--<img [src]="flagx" class="flag">-->
+  <div class="flag" [ngStyle]="{'background-image': 'url(' + flagx + ')'}"></div>
+  <div class="text">
+    <div class="countryName">{{countryNamex}}</div>
+    <div class="population">Population: {{populationx.toLocaleString()}}</div>
+    <div class="capital">Capital: {{capitalx}}</div>
+  </div>
 </div>

@@ -1,47 +1,64 @@
 .container{
+  position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: 10%;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding: 40px;
-  width: 200px;
-  height: 300px;
+  border-radius: 15px;
+  margin: 20px 10px 10px 10px;
+  //padding: 40px;
+  width: 220px;
+  height: 250px;
   justify-content: center;
   align-self: center;
-  background-color: rgba(255, 255, 255, 0.034);
+  background-color: #0099e6 ;
+  //background: linear-gradient(to bottom, #0099e6, #99ddff);
+  border: 0;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.411);
   &:hover{
     box-shadow:0 0 2rem #66fcf1;
-    width: 205px;
-    height: 305px;
+    width: 225px;
+    height: 255px;
   }
 }
 
 .flag{
-  border-radius: 20%;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
-  align-self: center
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 140px;
+  //padding: 20px;
+  align-self: flex-start;
+}
+
+.text{
+  position: absolute;
+  top: 150px;
+  align-self: center;
+  text-align: center;
+  font-family: 'Roboto';
+  color: #f9f9f9;
 }
 
 .countryName{
-  text-align: center;
-  font-family: 'Roboto';
-  font-size: 24px;
-  color: #66fcf1;
+  //text-align: center;
+  //font-family: 'Roboto';
+  font-size: 20px;
+  //color: #f9f9f9;
 }
 
 .capital{
-  text-align: center;
-  color: #66fcf1;
-  font-family: 'Roboto';
-  font-size: 18px;
+  //text-align: center;
+  //color: #f9f9f9;
+  //font-family: 'Roboto';
+  font-size: 16px;
 }
 
 .population{
-  text-align: center;
-  color: #66fcf1;
-  font-family: 'Roboto';
-  font-size: 18px;
+  //text-align: center;
+  //color: #f9f9f9;
+  //font-family: 'Roboto';
+  font-size: 16px;
 }
