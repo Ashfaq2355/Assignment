@@ -4,4 +4,5 @@
   <app-country-card *ngFor="let country of countries" [flagx]="country.flag" [countryNamex]="country.countryName"
     [populationx]="country.population" [capitalx]="country.capital" (click)="goToCountryDetailsPage(country)">
   </app-country-card>
+  <app-scroll-top></app-scroll-top>
 </div>
