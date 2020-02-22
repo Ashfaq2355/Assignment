@@ -1,7 +1,7 @@
 .scroll-to-top {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 13px;
+  right: 13px;
   opacity: 0;
   transition: all .2s ease-in-out;
  }
@@ -11,13 +11,14 @@
  }
 
  .button {
-   background-color: #ffffff;
+   background-color: #0099e6;
    border-radius: 50%;
-   width: 75px;
-   height: 75px;
-   background-image: url("https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png");
+   width: 50px;
+   height: 50px;
+   background-image: url("../../../assets/images/arrows-up800.png");
    background-size: cover;
    background-repeat: no-repeat;
+   //filter: invert(100%);
 
    &:hover{
      cursor: pointer;

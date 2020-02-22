@@ -60,4 +60,8 @@ export class CountryDetailsPageComponent implements OnInit {
     });
   }
 
+  goBack(){
+    this._router.navigateByUrl("/home-page");
+  }
+
 }
