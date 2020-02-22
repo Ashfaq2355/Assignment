@@ -1,0 +1,18 @@
+{
+  "countries-of-the-world":"Les Pays Du Monde",
+  "population":"Population",
+  "country-details":"Détailles du Pays",
+  "country-name":"Nom du Pays",
+  "capital":"Capitale",
+  "region":"Région",
+  "latitude":"Latitude",
+  "longitude":"Longitude",
+  "currency-code":"Code de la Devise",
+  "currency-name":"Nom de la Devise",
+  "currency-symbol":"Symbole de la Devise",
+  "borders":"Frontière",
+  "calling-codes":"Indicatifs d'appel",
+  "no-data-available":"Données non disponible",
+  "no-borders":"Pas de Frontière",
+  "language": "Langage"
+}

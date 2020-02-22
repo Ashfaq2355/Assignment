@@ -1,2 +1,11 @@
-<div class="header">Countries of the World</div>
+<div class="header">
+  <div class="headerText">{{'countries-of-the-world' | translate}}</div>
+  <div class="dropdown">
+    <button class="dropdownButton">{{'language' | translate}}</button>
+    <div class="dropdownContent">
+      <button (click)="setLanguage('EN')">English</button>
+      <button (click)="setLanguage('FR')">Français</button>
+    </div>
+  </div>
+</div>
 

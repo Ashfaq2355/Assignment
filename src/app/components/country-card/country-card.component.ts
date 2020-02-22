@@ -14,7 +14,7 @@ export class CountryCardComponent implements OnInit {
   @Output() selectedCountry: EventEmitter<string>;
 
 
-  constructor() { 
+  constructor() {
     this.selectedCountry=new EventEmitter<string>();
   }
 

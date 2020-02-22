@@ -15,16 +15,21 @@
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.411);
   &:hover{
     box-shadow:0 0 2rem #0059ff;
+    cursor: pointer;
     //width: 225px;
     //height: 255px;
   }
+
+  &:active {
+    background-color: #0076b1;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+
+
 }
 
-.container:active {
-  background-color: #0076b1;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
+
 
 .flag{
   background-size: cover;

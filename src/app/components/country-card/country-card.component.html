@@ -3,7 +3,6 @@
   <div class="flag" [ngStyle]="{'background-image': 'url(' + flagx + ')'}"></div>
   <div class="text">
     <div class="countryName">{{countryNamex}}</div>
-    <div class="population">Population: {{populationx.toLocaleString()}}</div>
-    <div class="capital">Capital: {{capitalx}}</div>
+    <div class="population">{{'population' | translate}}: {{populationx.toLocaleString()}}</div>
   </div>
 </div>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Countries } from './dto/countries';
-import { CountriesService } from './services/countries.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +7,11 @@ import { CountriesService } from './services/countries.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
-  
-  constructor (){
-   
-   }
 
-method($event){
-  console.log('In parent component')
-}
- 
+
+  constructor (private _translateService: TranslateService){
+    this._translateService.setDefaultLang('en');
+    this._translateService.use(this._translateService.getBrowserLang());
+   }
 }
 

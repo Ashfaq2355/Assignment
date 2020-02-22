@@ -8,10 +8,10 @@ section{
   height: 100vh;
   display: flex;
 
+
   .screen{
     position: relative;
     flex-grow: 5;
-    transition: 1s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ section{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: green;
+    background-color: rgb(250, 193, 4);
 
     .card2{
       text-align: left;
@@ -65,7 +65,23 @@ section{
 
 section {
   .screen2:hover{
-   flex-grow: 5;
+    flex-grow: 5;
   }
 }
 
+@media only screen and (max-width: 600px){
+  section{
+    display: flex;
+    flex-direction: column;
+    .screen .card .imageBox img{
+      width: 300px;
+      height: 200px;
+      padding-top: 60px;
+      align-self: center;
+    }
+    .screen2{
+      overflow: auto;
+    }
+
+  }
+}

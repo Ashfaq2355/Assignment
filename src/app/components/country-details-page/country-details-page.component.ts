@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CountriesService } from 'src/app/services/countries.service';
 import { CountryDetails } from 'src/app/dto/countryDetails';
 
@@ -12,7 +12,7 @@ export class CountryDetailsPageComponent implements OnInit {
 
   countryDetails: CountryDetails;
 
-  constructor(private _activatedRoute: ActivatedRoute, private _countryService: CountriesService) {
+  constructor(private _activatedRoute: ActivatedRoute, private _router: Router, private _countryService: CountriesService) {
 
     this.getAllCountriesDetails();
     this.countryDetails = {
@@ -59,4 +59,5 @@ export class CountryDetailsPageComponent implements OnInit {
       });
     });
   }
+
 }

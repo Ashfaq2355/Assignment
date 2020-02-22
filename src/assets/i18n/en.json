@@ -1,0 +1,18 @@
+{
+  "countries-of-the-world":"Countries of the World",
+  "population":"Population",
+  "country-details":"Country Details",
+  "country-name":"Country Name",
+  "capital":"Capital",
+  "region":"Region",
+  "latitude":"Latitude",
+  "longitude":"Longitude",
+  "currency-code":"Currency Code",
+  "currency-name":"Currency Name",
+  "currency-symbol":"Currency Symbol",
+  "borders":"Borders",
+  "calling-codes":"Calling Codes",
+  "no-data-available": "No data available",
+  "no-borders":"No borders",
+  "language": "Language"
+}
