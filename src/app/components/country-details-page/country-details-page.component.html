@@ -4,8 +4,10 @@
       <div class="screen">
         <button class="back" (click)="goBack()"></button>
         <div class="card">
-          <div class="imageBox">
-            <img [src]="countryDetails.flag">
+          <div class="imageBox" [ngStyle]="{'background-image': 'url(' + countryDetails.flag + ')'}">
+            <!--<img [src]="countryDetails.flag">-->
+          </div>
+          <div class="mainName" *ngIf="countryDetails.countryName.length != 0; else elseBlock2">{{countryDetails.countryName}}
           </div>
         </div>
       </div>
@@ -20,99 +22,99 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'country-name' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div *ngIf="countryDetails.countryName.length != 0; else elseBlock2">{{countryDetails.countryName}}
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'capital' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div *ngIf="countryDetails.capital.length != 0; else elseBlock2">{{countryDetails.capital}}</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'region' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div *ngIf="countryDetails.region.length != 0; else elseBlock2">{{countryDetails.region}}</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'population' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div *ngIf="countryDetails.population.length != 0; else elseBlock2">
                       {{countryDetails.population.toLocaleString()}}</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'latitude' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div *ngIf="countryDetails.latitude.length != 0; else elseBlock2">{{countryDetails.latitude}}°</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'longitude' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div *ngIf="countryDetails.longitude.length != 0; else elseBlock2">{{countryDetails.longitude}}°
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'currency-code' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div
                       *ngIf="countryDetails.currenciesCode.length != 0 && countryDetails.currenciesCode != null; else elseBlock2">
                       {{countryDetails.currenciesCode}}</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'currency-name' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div
                       *ngIf="countryDetails.currenciesName.length != 0 && countryDetails.currenciesName != null; else elseBlock2">
                       {{countryDetails.currenciesName}}</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'currency-symbol' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div
                       *ngIf="countryDetails.currenciesSymbol.length != 0 && countryDetails.currenciesSymbol != null; else elseBlock2">
                       {{countryDetails.currenciesSymbol}}</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'borders' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div *ngIf="countryDetails.borders.length != 0; else elseBlock">{{countryDetails.borders}}</div>
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="attribute">
                     {{'calling-codes' | translate}}:
                   </td>
-                  <td>
+                  <td class="value">
                     <div
                       *ngIf="countryDetails.callingCodes != '' && countryDetails.callingCodes.length != 0; else elseBlock2">
                       {{countryDetails.callingCodes}}</div>

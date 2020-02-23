@@ -40,15 +40,26 @@ section{
       max-width: 600px;
       text-align: center;
       justify-content: center;
+
+      .mainName{
+        padding-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: #0099e6;
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+      }
+
       .imageBox{
         overflow: hidden;
-
-        img{
-          width: 600px;
-          height: 400px;
-          text-align: center;
-        }
-
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 400px;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.411);
       }
     }
    }
@@ -73,10 +84,25 @@ section{
         align-self: center;
         color: white;
         font-family: 'Roboto', sans-serif;
+
+        .attribute{
+          padding: 10px 10px 10px 10px;
+          text-align: right;
+          font-style: italic;
+          color: hsla(0%, 0%, 100%, 0.8);
+        }
+
+        .value{
+          font-weight: 600;
+        }
       }
+
+
 
       th{
         text-align: center;
+        font-size: 27px;
+        padding: 10px;
       }
     }
 
