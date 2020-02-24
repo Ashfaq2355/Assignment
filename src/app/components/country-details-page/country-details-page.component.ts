@@ -36,12 +36,12 @@ export class CountryDetailsPageComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  //Gets the details of the different countries from the api and save them in the variables declared in countryDetails.ts
+  //Gets the details of the different countries from the api and save them in the variables declared in countryDetails.ts.
   getAllCountriesDetails(): void {
-    //Gets the name of the country in the url and saves it in countryName
+    //Gets the name of the country in the url and saves it in countryName.
     const countryName = this._activatedRoute.snapshot.paramMap.get('countryName');
     //console.log(countryName);
-    //Gets the details of the country based on the country name from the url
+    //Gets the details of the country based on the country name from the url.
     this._countryService.getAllCountriesDetails(countryName).subscribe(
       (data: any) => {
         data.forEach(element => {
@@ -63,11 +63,11 @@ export class CountryDetailsPageComponent implements OnInit {
         });
       });
   }
-  //Return back to home-page
+  //Return back to home-page.
   goBack() {
     this._router.navigateByUrl("/home-page");
   }
-  //Calculate time of different countries
+  //Calculate time of different countries.
   calculateTime(timezone: string[]) {
     let time: string;
 

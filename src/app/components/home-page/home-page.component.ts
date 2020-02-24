@@ -23,7 +23,7 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
 
   }
-  //Gets the name, population size and flag of all the countries of the api and saves them in the variables defined in countries.ts
+  //Gets the name, population size and flag of all the countries of the api and saves them in the variables defined in countries.ts.
   getCountries() {
     this._countriesService.getAllCountries().subscribe(
       (data: any) => {
@@ -37,7 +37,7 @@ export class HomePageComponent implements OnInit {
       }
     );
   }
-  //Navigates to page where details about specific country will be displayed
+  //Navigates to page where details about specific country will be displayed.
   goToCountryDetailsPage(country) {
     this._router.navigate(['/countryDetails/', country.countryName]);
   }
