@@ -11,20 +11,9 @@ export class CountryCardComponent implements OnInit {
   @Input() populationx: number;
   @Input() capitalx: string;
 
-  @Output() selectedCountry: EventEmitter<string>;
-
-
   constructor() {
-    this.selectedCountry=new EventEmitter<string>();
   }
 
   ngOnInit() {
   }
-
-  countrySelected(countryNamex: string): void{
-    console.log(countryNamex);
-    this.selectedCountry.emit(countryNamex);
-  }
-
-
 }

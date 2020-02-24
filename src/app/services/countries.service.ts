@@ -10,12 +10,12 @@ export class CountriesService {
 
   }
 
-  getCountriesByName(){
+  getAllCountries() {
     return this._http.get('https://restcountries.eu/rest/v2/all?fields=name;capital;population;flag');
   }
 
-  getAllCountriesDetails(countryName: string){
+  getAllCountriesDetails(countryName: string) {
     return this._http.get(`https://restcountries.eu/rest/v2/name/${countryName}`);
-    
+
   }
 }

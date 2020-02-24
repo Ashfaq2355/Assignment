@@ -10,11 +10,12 @@ export class HeaderComponent implements OnInit {
 
   constructor(private _translateService: TranslateService) { }
 
-  setLanguage(language:string){
-    if (language === 'EN'){
+  //Change language of page when clicking on either "English" or "Francais" under the language button
+  setLanguage(language: string) {
+    if (language === 'EN') {
       this._translateService.use('en')
     }
-    else if (language === 'FR'){
+    else if (language === 'FR') {
       this._translateService.use('fr')
     }
   }
